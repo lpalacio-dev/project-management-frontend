@@ -1,0 +1,27 @@
+<div class="w-full px-10">
+    <div class="text-2xl">Iniciar sesión</div>
+    <form [formGroup]="loginForm" class="flex flex-col">
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input
+                type="email"
+                matInput
+                placeholder="pat@example.com"
+                formControlName="email"
+                required
+            />
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input
+                type="password"
+                matInput
+                placeholder=""
+                formControlName="password"
+                required
+            />
+        </mat-form-field>
+        <button matButton="filled">Iniciar sesión</button>
+    </form>
+    
+</div>
